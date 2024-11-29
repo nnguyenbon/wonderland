@@ -1,0 +1,77 @@
+:root {
+    --gradient-background: -webkit-linear-gradient(#AE8625, #BDA058, #EACE0C, #D2AC47, #F9F295, #E0AA3E);
+    --blue-background: rgb(47, 54, 102);
+    --background: rgb(12, 15, 42);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Supermercado One', sans-serif;
+}
+
+body {
+    background-color: var(--background) !important;
+}
+
+.navbar {
+    background-color: var(--blue-background);
+    z-index: 999;
+} 
+
+.navbar a {
+    padding: 5px 10px;
+    letter-spacing: 3px;
+    color: white;
+    align-items: center;
+}
+
+.navbar a:hover {
+    letter-spacing: 3px;
+    background-color: var(--background);
+    color: white;
+    align-items: center;
+}
+
+.dropdown-menu a:hover {
+    color: white !important;
+}
+
+footer {
+    margin-top: 2%;
+    background-color: var(--blue-background);
+    padding: 3% 0 2%;
+}
+
+footer p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .collapse {
+        margin-top: 1%;
+    }
+    .navbar a {
+        padding: 1% 10px !important;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        background-color: rgb(47, 54, 102) !important;
+    }
+
+    .dropdown-menu a {
+        color: white !important;
+    }
+
+    .navbar form {
+        width: 100%;
+        justify-content: center;
+        margin: 1%;
+    }
+
+    footer p {
+        font-size: 80%;
+    }
+}

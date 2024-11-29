@@ -1,0 +1,91 @@
+:root {
+    --gradient-background: -webkit-linear-gradient(#AE8625, #BDA058, #EACE0C, #D2AC47, #F9F295, #E0AA3E);
+    --blue-background: rgb(41, 50, 118);
+    --background: rgb(12, 15, 42);
+}
+
+.main {
+    margin: 5% auto;
+    width: 90% !important;
+}
+
+.about-game-section {
+    width: 100%;
+    border-image: var(--gradient-background) 1;
+    border-radius: 1%;
+    border-width: 1%;
+    border-style: solid;
+    padding: 2% 4%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    background-image: var(--gradient-background);
+    color: transparent;
+    background-clip: text;
+    text-shadow: 0 5px 20px #e9ca5a;
+    letter-spacing: 3px;
+}
+
+.about-game-section p {
+    font-size: 150%;
+}
+
+.season-event {
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.season-event p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.season-event h1 {
+    width: 100%;
+}
+
+.section {
+    width: 48%;
+}
+
+.season-event img {
+    width: 100%;
+}
+
+.borderimg {
+    border-image: var(--gradient-background) 1;
+    border-radius: 1%;
+    border-width: 1%;
+    border-style: solid;
+}
+
+.game-map {
+    width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-game-section {
+        margin-top: 15%;
+    } 
+
+    .about-game-section p {
+        font-size: 90%;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .map-story {
+        flex-wrap: wrap;
+    }
+
+    .map-story h1 {
+        width: 100%;
+    }
+
+    .game-map {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}

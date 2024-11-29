@@ -1,0 +1,173 @@
+:root {
+    --gradient-background: -webkit-linear-gradient(#AE8625, #BDA058, #EACE0C, #D2AC47, #F9F295, #E0AA3E);
+    --blue-background: rgb(41, 50, 118);
+    --background: rgb(12, 15, 42);
+}
+
+.banner div {
+    background-color: rgba(27, 34, 97, 0.7);
+    border-image: var(--gradient-background) 1;
+    border-radius: 1%;
+    border-width: 1%;
+    border-style: solid;
+    width: 80%;
+    margin: 0 10%;
+    top: 40%;
+}
+
+.title {
+    background-image: var(--gradient-background);
+    color: transparent;
+    background-clip: text;
+    text-shadow: 0 5px 20px #e9ca5a;
+    letter-spacing: 3px;
+}
+
+.news, .role, .media, .download {
+    width: 90%;
+}
+
+.news h1{
+    background-image: var(--gradient-background);
+    color: transparent;
+    background-clip: text;
+    text-shadow: 0 5px 20px #e9ca5a;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+.right-side {
+    width: 65%;
+}
+
+.right-side img {
+    width: 100%;
+}
+
+.left-side {
+    width: 34%;
+}
+
+.left-side img {
+    width: 50%;
+}
+
+.roleimg {
+    width: 76%;
+    margin: 0 12%;
+}
+
+.cake {
+    width: 15%;
+    align-items: center;
+}
+
+.media-title h2, .social-media a {
+    background-image: var(--gradient-background);
+    color: transparent;
+    background-clip: text;
+    text-shadow: 0 5px 20px #e9ca5a;
+    letter-spacing: 3px;
+}
+
+.line {
+    margin-left: 1%;
+    width: 55%;
+    border-image: var(--gradient-background) 1;
+    border-radius: 1%;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 5px 20px #e9ca5a;
+}
+
+.social-media {
+    width: 30%;
+    margin-left: 5%;
+}
+
+.social-media ul {
+    width: 100%;
+}
+
+.social-media li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 1%;
+}
+
+.social-media a:hover {
+    color: white;
+    letter-spacing: 3px;
+}
+
+.download {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 12px; /* Bo góc mềm mại */
+    background: linear-gradient(to right, #e9ca5a, #f7b42c); /* Viền gradient */
+    box-shadow: 0 5px 20px #e9ca5a; /* Hiệu ứng đổ bóng */
+    overflow: hidden;
+    transition: all 0.3s ease; /* Hiệu ứng mượt khi hover */
+    cursor: pointer;
+}
+
+.download:hover {
+    color: rgb(12, 15, 42);
+    background: linear-gradient(to right, #f7b42c, #e9ca5a); /* Đổi màu gradient */
+    box-shadow: 0 8px 25px #f7b42c; /* Tăng hiệu ứng bóng */
+    transform: translateY(-2px); /* Tạo cảm giác nút nổi lên */
+}
+
+.download::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-background); /* Gradient từ biến */
+    border-radius: inherit; /* Cùng border-radius */
+    z-index: -1; /* Đưa gradient về phía sau */
+}
+
+.download:hover::before {
+    filter: brightness(1.2); /* Làm sáng gradient khi hover */
+    transition: all 0.3s ease; /* Mượt mà khi thay đổi */
+}
+
+.download i {
+    font-size: 150%;
+}
+
+@media screen and (max-width: 1200px) {
+    .news-content {
+        flex-wrap: wrap;
+    }
+
+    .right-side, .left-side {
+        width: 100%;
+    }
+
+    .media-title {
+        flex-wrap: wrap;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+
+    .social-media li {
+        margin: 0 2%;
+    }
+
+    .title {
+        font-size: 90%;
+        padding: 0;
+        margin: 0;
+    }
+}

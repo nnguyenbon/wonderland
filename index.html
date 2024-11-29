@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Supermercado+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="asset/base.css">
+    <link rel="stylesheet" href="asset/homepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="../image/bow_tie.png">
+    <title>Wonderland</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light px-3 position-fixed w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" aria-current="page"  href="#">Home Page</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-2">
+                        <a class="nav-link active text-light" aria-current="page" href="template/gameoverview.html">Game Overview</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-light" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark" href="#">News</a></li>
+                            <li><a class="dropdown-item text-dark" href="#">Community</a></li>
+                            <li class="text-dark">
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-store"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main container-fluid">
+        <div class="banner position-relative w-75 m-auto">
+            <div class="position-absolute">
+                <h1 class="text-center title px-5 py-3">Wonderland: Glory Garden</h1>
+            </div>
+            <img src="../image/back_ground.png" alt="banner" class="banner-background w-100">
+        </div>
+
+        <div class="news m-auto my-5">
+            <h1 class="m-auto text-center my-3">Latest News</h1>
+            <div class="news-content d-flex justify-content-between">
+                <div class="right-side">
+                    <img src="../image/news1.jpg" alt="news" class="newsimg">
+                    <div class="content p-3">
+                        <h4 class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+                        <p class="text-secondary">12/11/2024</p>
+                    </div>
+                </div>
+                <div class="left-side">
+                    <div class="small-content d-flex mb-4">
+                        <img src="../image/news2.jpg" alt="news" class="newsimg">
+                        <div class="content p-3">
+                            <h6 class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+                                <p class="text-secondary">06/11/2024</p>
+                        </div>
+                    </div>
+                    <div class="small-content d-flex mb-4">
+                        <img src="../image/news3.jpg" alt="news" class="newsimg">
+                        <div class="content p-3">
+                            <h6 class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+                                <p class="text-secondary">29/08/2024</p>
+                        </div>
+                    </div>
+                    <div class="small-content d-flex">
+                        <img src="../image/news4.jpg" alt="news" class="newsimg">
+                        <div class="content p-3">
+                            <h6 class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+                                <p class="text-secondary">30/02/2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="role m-auto my-5 position-relative banner">
+            <div class="position-absolute">
+                <h2 class="text-center title px-5 py-3">Choose Your Character</h1>
+            </div>
+            <img src="../image/role.jpg" alt="role" class="roleimg">
+        </div>
+
+        <div class="media m-auto my-5">
+            <div class="media-title d-flex align-items-center justify-content-between">
+                <img src="../image/cake.png" alt="cake" class="cake d-inline-block">
+                <h2 class="text-center">Join Our Community</h2>
+                <div class="line"></div>
+                <div class="social-media">
+                    <ul class="p-0  d-flex justify-content-center">
+                        <li><a href="#" class="fs-1"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="#" class="fs-1"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="fs-1"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#" class="fs-1"><i class="fa-brands fa-discord"></i></a></li>
+                        <li><a href="#" class="fs-1"><i class="fa-brands fa-square-threads"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="download d-flex m-auto align-items-center p-2 justify-content-center">
+            <i class="fa-solid fa-download"></i>
+            <h1 class="mx-3">Download Now</h1>
+            <i class="fa-solid fa-download"></i>
+        </div>
+    </div>
+
+    <footer class="container-fluid w-100">
+        <p class="text-light text-center">All content copyright © 2023, Wonderland Co. Ltd.</p>
+        <p class="text-light text-center">Bon Nguyen ft. Minh Nguyen</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
